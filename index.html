@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Omah Figma Full responsive Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="font-poppins leading-[0.8]">
+    <!-- ====== nav_bar start here =====  -->
+    <div class="bg-[#EEEDDE]">
+
+        <nav class="pt-[20px] md:pt-[25px] lg:pt-[63px] pl-[10px] md:px-[50px] lg:px-[20px] left-0 top-0 absolute w-full ">
+           <div class="max-w-[100%] lg:max-w-[1166px] mx-auto flex justify-between items-center">
+            <div class="">
+                <img src="images/logo.png" alt="not_found">
+            </div>
+            <div class="nav_menu hidden md:block flex justify-center align-center">
+                <ul class="flex justify-between md:gap-x-[50px] lg:gap-x-[100px] capitalize font-bold">
+                    <li class="relative">
+                        <a class="text-neutral-400 duration-500 text-sm font-bold mr-2.5 hover:text-stone-950 after:absolute after:rounded after:w-[23px] after:h-[2px] after:bg-[#F6762E] after:content-[''] after:duration-500 after:left-[8px] after:bottom-[-10px] after:opacity-0 hover:after:opacity-100" href="#">home</a>
+                    </li>
+                    <li class="relative">
+                        <a class="text-neutral-400 duration-500 text-sm font-bold mr-2.5 hover:text-stone-950 after:absolute after:rounded after:w-[23px] after:h-[2px] after:bg-[#F6762E] after:content-[''] after:duration-500 after:left-[10px] after:bottom-[-10px] after:opacity-0 hover:after:opacity-100" href="#">about</a>
+                    </li>
+                    <li class="relative">
+                        <a class="text-neutral-400 duration-500 text-sm font-bold mr-2.5 hover:text-stone-950 after:absolute after:rounded after:w-[23px] after:h-[2px] after:bg-[#F6762E] after:content-[''] after:duration-500 after:left-[24px] after:bottom-[-10px] after:opacity-0 hover:after:opacity-100" href="#">proparties</a>
+                        <i class="text-neutral-400 duration-500 text-sm font-bold fa-solid fa-angle-down cursor-pointer hover:text-stone-950"></i>
+                    </li>
+                    <li class="relative">
+                        <a class="text-neutral-400 duration-500 text-sm font-bold mr-2.5 hover:text-stone-950 after:absolute after:rounded after:w-[23px] after:h-[2px] after:bg-[#F6762E] after:content-[''] after:duration-500 after:left-[15px] after:bottom-[-10px] after:opacity-0 hover:after:opacity-100" href="#">contact</a>
+                    </li>
+                </ul>
+           
+            </div>
+            <div class="block md:hidden w-[50px] h-[50px] pt-[20px]">
+                <i class="text-[20px] text-right ml-[20px] fa-solid fa-bars"></i>
+            </div>
+           </div>
+        </nav>
+    <!-- ====== nav_bar end here =====  -->
+    <!-- ===== banner part start here ==== -->
+
+        <div class="max-w-[100%] lg:max-w-[1166px] mx-auto pt-[100px] md:pt-[125px] lg:pt-[192px] pb-[20px] md:pb-[63px] flex justify-between">
+
+            <div class="w-full lg:w-[777px] px-[10px] md:px-[50px] lg:px-[20px]">
+                <h1 class="text-[20px] sm:text-[32px] lg:text-[40px] font-semibold leading-[120%]  lg:leading-[110%] xl:leading-[150%] capitalize mb-[24px]">Temukan Hunian Keluarga Sesuai Keinginanmu</h1>
+                <p class="text-base text-[#203239] text-justify font-light sm:pr-[150px] md:pr-[260px] lg:pr-[300px] mb-[30px] lg:mb-[56px]">Menyediakan hunian bagi keluarga anda dengan varian pilihan dan lokasi yang strategis di kota anda dengan cara yang lebih mudah.</p>
+
+                <div class="relative flex justify-center align-center bg-white rounded-[15px] overflow-hidden w-100% sm:w-[85%] md:w-[675px] h-[70px]">
+                  <div class=" absolute left-[14px] sm:left-[30px] top-[25px]">
+                    <i class="text-[20px] text-[#000] fa-solid fa-location-dot"></i>
+                  </div>
+
+                    <input class=" py-[20px] pl-[35px] pr-[85px] sm:pl-[56px] sm:pr-[165px] md:px-[56px] rounded-[15px]  w-[675px] overflow-hidden border-none outline-none" type="text" placeholder="Search location, properties, residental group">
+
+                    <button class="absolute hover:bg-[blueviolet] duration-500 right-[10px] sm:right-[14px] top-[20px] sm:top-[10px] w-[65px] sm:w-[140px] h-[34px] sm:h-[50px] bg-[#203239] rounded-[5px] sm:rounded-[10px] text-white">Search</button>
+                </div>
+            </div>
+            <div class=" hidden lg:block bg-banner_img bg-no-repeat bg-center object-cover lg:w-[401px] h-[523px] lg:pr-[20px]" >
+                
+            </div>
+        
+        </div>
+        
+    
+    </div>
+<!-- ===== banner part end here ==== -->
+
+<!-- ==== proparties part start here ===== -->
+
+    <div class="max-w-[100%] lg:max-w-[1166px] mx-auto mt-[20px] lg:mt-[100px] mb-[20px] lg:mb-[100px]">
+        <div class="font-semibold pl-[10px] md:pl-[20px] lg:pl-[50px] xl:pl-[0] text-[20px] sm:text-[32px] lg:text-[40px] mb-[30px] sm:mb-[64px] capitalize leading-[150%] pr-[0] lg:pr-[300px] xl:pr-[600px]">
+            <h2>Tahapan Pembelian Properti yang Mudah dan Cepat</h2>
+        </div>
+        <div class="px-[10px] flex flex-col sm:flex-row gap-y-[20px] sm:flex sm:justify-between sm:items-center md:gap-x-[5px]">
+            <div class="w-[300px] h-[300px] hover:shadow-[0px_7px_29px_0px_rgba(0,0,0,0.25)] hover:rounded-[10px] rounded-[10px border border-solid border-[#3333331c] cursor-pointer duration-500 py-[20px] px-[33px]">
+                <div class="flex justify-between"> 
+                <div class="relative">
+                    <h4 class="after:absolute after:rounded after:w-[8px] after:h-[30px] after:bg-[#F6762E] after:content-[''] after:duration-500 after:left-[-35px] after:top-[4px] font-bold text-[16px] capitalize mb-[15px]">Pilih Properti</h4>
+                </div>
+                <div>
+                    <span class="text-[#FF7527] font-bold text-[16px] capitalize">01</span>
+                </div>
+            </div>
+                <p class="text-[#756666] text-base text-justify font-medium capitalize leading-[24px] mb-[48px]">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga. Cara memilih properti yang bijak dapat anda baca lebih lanjut di sini</p>
+
+                <div>
+                    <h3 class="font-medium text-[16px] capitalize">Baca lebih Lanjut <i class="ml-[10px] fa-solid fa-arrow-right"></i></h3>
+                </div>
+
+            </div>
+            <div class="w-[300px] h-[300px] hover:shadow-[0px_7px_29px_0px_rgba(0,0,0,0.25)] hover:rounded-[10px] rounded-[10px border border-solid border-[#3333331c] cursor-pointer duration-500 py-[20px] px-[33px]">
+                <div class="flex justify-between"> 
+                <div class="relative">
+                    <h4 class="after:absolute after:rounded after:w-[8px] after:h-[30px] after:bg-[#F6762E] after:content-[''] after:duration-500 after:left-[-35px] after:top-[4px] font-bold text-[16px] capitalize mb-[15px]">KPR dan Sertifikasi</h4>
+                </div>
+                <div>
+                    <span class="text-[#FF7527] font-bold text-[16px] capitalize">02</span>
+                </div>
+            </div>
+                <p class="text-[#756666] text-base text-justify font-medium capitalize leading-[24px] mb-[48px]">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga. Cara memilih properti yang bijak dapat anda baca lebih lanjut di sini</p>
+
+                <div>
+                    <h3 class="font-medium text-[16px] capitalize">Baca lebih Lanjut <i class="ml-[10px] fa-solid fa-arrow-right"></i></h3>
+                </div>
+
+            </div>
+            <div class="hidden md:block w-[300px] h-[300px] hover:shadow-[0px_7px_29px_0px_rgba(0,0,0,0.25)] hover:rounded-[10px] rounded-[10px border border-solid border-[#3333331c] cursor-pointer duration-500 py-[20px] px-[33px]">
+                <div class="flex justify-between"> 
+                <div class="relative">
+                    <h4 class="after:absolute after:rounded after:w-[8px] after:h-[30px] after:bg-[#F6762E] after:content-[''] after:duration-500 after:left-[-35px] after:top-[4px] font-bold text-[16px] capitalize mb-[15px]">KPR dan Sertifikasi</h4>
+                </div>
+                <div>
+                    <span class="text-[#FF7527] font-bold text-[16px] capitalize">03</span>
+                </div>
+            </div>
+                <p class="text-[#756666] text-base text-justify font-medium capitalize leading-[24px] mb-[48px]">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga. Cara memilih properti yang bijak dapat anda baca lebih lanjut di sini</p>
+
+                <div>
+                    <h3 class="font-medium text-[16px] capitalize">Baca lebih Lanjut <i class="ml-[10px] fa-solid fa-arrow-right"></i></h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- ==== proparties part end here ===== -->
+<!-- ===== resident part start here ==== -->
+
+    <div class="pt-[20px] lg:pt-[68px] pb-[20px] lg:pb-[68px] w-full bg-[#EEEDDE]">
+        <div class="max-w-[100%] lg:max-w-[1166px] mx-auto">
+            <div class="pl-[10px] md:pl-[20px] lg:pl-[20px] xl:pl-[0]">
+                <h5 class="pb-[8px] text-[#FF7527] capitalize font-semibold text-base">Pilihan konsumen</h5>
+                <h2 class="font-semibold text-[20px] sm:text-[32px] lg:text-[40px] mb-[30px] lg:mb-[64px] capitalize leading-[150%] pr-[0] lg:pr-[300px] xl:pr-[600px]">Residen Favorit</h2>
+            </div>
+            <div class="flex justify-between ">
+
+            <div class="hidden lg:block w-[570px] h-[500px] lg:pl-[0]">
+                <div class="relative">
+                    <span class="tilt_box"> 
+                        <img class="bg-no-repeat object-cover bg-center" src="images/resident_1.png" alt="not_found">
+                    </span>
+                    <div class="absolute left-[164px] top-[60px]">
+                        <img class="bg-no-repeat object-cover bg-center rounded-[10px]" src="images/resident_2.jpg" alt="not_found">
+                        <div class="opacity-0 hover:opacity-100 duration-500 w-[100%] h-[100%] absolute left-0 top-0 bg-gradient-to-r from-[#d008d794] to-[#1b1ba4b2] rounded-[10px]">
+                            <div class="flex justify-center align-center flex-wrap">
+                            <div class="w-[100%] text-[#fff] text-[24px] leading-[28px] capitalize ml-[36px] mt-[100px] mb-[50px]">
+                                <h2>mr.kulikamia</h2>
+                                <h3>
+                                    <a href="#">
+                                        <i class="text-[#000] text-[20px] mr-[10px] hover:text-[#19bbfb] duration-500 fa-solid fa-phone"></i>
+                                    </a> phone:+05843957837</h3>
+    
+                                <h3>his house is vary beutiful</h3>
+                                
+                            </div>
+                            <div class="text-[24px] text-[#0bff98] flex gap-x-[32px] ">
+                               <a href="#"> <i class="hover:text-[#fff]  duration-500 fa-brands fa-facebook-f"></i></a>
+                               <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-instagram"></i></a>
+                               <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-linkedin"></i></a>
+                               <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[100%] md:w-[570px] md:h-[500px] mx-[20px] lg:mx-[0]">
+                <h3 class="text-[20px] sm:text-[32px] lg:text-[40px] font-semibold leading-[120%]  lg:leading-[110%] xl:leading-[150%] capitalize mb-[24px]">Bangunan yang dirancang oleh Aristektur Handal</h3>
+                <p class="capitalize font-light text-base leading-[24px] text-[#203239] md:pr-[100px] lg:text-justify">Tanpa diragukan, properti yang disediakan dalam webiste kami merupakan hasil kerjasama secara profesional dengan para Arsitektur ternama dan Developer yang terpercaya.</p>
+                <div class="flex gap-x-[30px] flex-col sm:flex-row gap-y-[20px] sm:gap-y-[0] mt-[48px]">
+                    <div class="w-[240px] h-[50px] border rounded-[4px] hover:bg-[#000] duration-500 border-solid border-[#000] flex justify-center items-center">
+                        <a class=" hover:text-[#fff] py-[13px] px-[41px] capitalize font-semibold text-base text-[#203239]" href="#"><i class="mr-[5px] fa-solid fa-phone"></i> Hubungi Kami</a>
+                    </div>
+                    <div class="w-[240px] h-[50px] border rounded-[4px] hover:bg-[#000] duration-500 border-solid border-[#000] flex justify-center items-center">
+                        <a class=" hover:text-[#fff] py-[13px] px-[41px] capitalize font-semibold text-base text-[#203239]" href="#">Explore lebih banyak</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ===== resident part end here ==== -->
+<!-- ===== resident part start here ===== -->
+
+<div class="pt-[20px] lg:pt-[68px] pb-[30px] lg:pb-[68px]">
+    <div class="max-w-[100%] lg:max-w-[1166px] mx-auto">
+        <div class="pl-[10px] md:pl-[20px] lg:pl-[20px] xl:pl-[0]">
+            <h5 class="pb-[8px] text-[#FF7527] capitalize font-semibold text-base">Pilihan Auditor</h5>
+            <h2 class="font-semibold text-[20px] sm:text-[32px] lg:text-[40px] mb-[30px] lg:mb-[64px] capitalize leading-[150%] pr-[0] lg:pr-[300px] xl:pr-[600px]">Residen Berbagai Kota</h2>
+        </div>
+        <div class="flex flex-col gap-y-20px sm:flex-row sm:gap-x-[10px] sm:flex sm:justify-between px-[15px]">
+            <div class="w-[100%] md:w-[357px] ">
+                <div class="relative">
+
+                    <img class="bg-no-repeat bg-center object-cover mb-[10px] sm:mb-[16px] rounded-[5px]" src="images/resident_3.jpg" alt="not_found">
+
+                    <div class="hidden sm:block opacity-0 hover:opacity-100 duration-500 w-[100%] h-[100%] absolute left-0 top-0 bg-gradient-to-r from-[#d008d794] to-[#1b1ba4b2] rounded-[10px]">
+                        <div class="flex justify-center align-center flex-wrap">
+                        <div class="w-[100%] text-[#fff] text-[24px] leading-[28px] capitalize mx-[43px] md:mt-[34px] lg:mt-[100px] mb-[50px]">
+                            <h2>mr.kulikamia</h2>
+                            <h3>
+                                <a href="#">
+                                    <i class="text-[#000] text-[20px] mr-[10px] hover:text-[#19bbfb] duration-500 fa-solid fa-phone"></i>
+                                </a> phone:+05843957837</h3>
+
+                            <h3>his house is vary beutiful</h3>
+                            
+                        </div>
+                        <div class="text-[24px] text-[#0bff98] flex gap-x-[32px] ">
+                           <a href="#"> <i class="hover:text-[#fff]  duration-500 fa-brands fa-facebook-f"></i></a>
+                           <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-instagram"></i></a>
+                           <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-linkedin"></i></a>
+                           <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+              <div>
+                <h3 class="font-medium text-[20px] md:text-[22px] lg:text-[24px] capitalize leading-[80%] lg:leading-[150%] mb-[8px]">Magnolia Surabaya</h3>
+                <p class="text-[#203239] font-light text-base capitalize leading-[24px] md:leading-[30px] pr-[30px] text-justify">Jl. Gatot Subroto No.KM.6,8, RT.001/RW.008, Jatake, Kec. Jatiuwung, Kota Tangerang, Banten 15136</p>
+
+              </div>
+            </div>
+            <div class="hidden sm:block md:block w-[100%] md:w-[357px]">
+                <div class="relative">
+                    <img class="bg-no-repeat bg-center object-cover mb-[16px] rounded-[5px]" src="images/resident_4.jpg" alt="not_found">
+                    <div class="opacity-0 hover:opacity-100 duration-500 w-[100%] h-[100%] absolute left-0 top-0 bg-gradient-to-r from-[#d008d794] to-[#1b1ba4b2] rounded-[10px]">
+                        <div class="flex justify-center align-center flex-wrap">
+                        <div class="w-[100%] text-[#fff] text-[24px] leading-[28px] capitalize mx-[43px] md:mt-[34px] lg:mt-[100px] mb-[50px]">
+                            <h2>mr.kulikamia</h2>
+                            <h3>
+                                <a href="#">
+                                    <i class="text-[#000] text-[20px] mr-[10px] hover:text-[#19bbfb] duration-500 fa-solid fa-phone"></i>
+                                </a> phone:+05843957837</h3>
+
+                            <h3>his house is vary beutiful</h3>
+                            
+                        </div>
+                        <div class="text-[24px] text-[#0bff98] flex gap-x-[32px] ">
+                           <a href="#"> <i class="hover:text-[#fff]  duration-500 fa-brands fa-facebook-f"></i></a>
+                           <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-instagram"></i></a>
+                           <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-linkedin"></i></a>
+                           <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-medium text-[20px] sm:text-[22px] lg:text-[24px] capitalize leading-[80%] lg:leading-[150%] mb-[8px]">Pinang Residences</h3>
+                    <p class="text-[#203239] font-light text-base capitalize leading-[30px] pr-[30px] text-justify">
+                    Jl. Deplu Raya No.16 RT.5, RW.003 Bintaro, Pesanggrahan, Jakarta Selatan 12330
+                </p>
+                </div>
+
+            </div>
+            <div class="hidden sm:hidden md:block w-[357px]">
+                <div class="relative">
+                    <img class="bg-no-repeat bg-center object-cover mb-[16px]" src="images/resident_5.png" alt="not_found">
+                    <div class="opacity-0 hover:opacity-100 duration-500 w-[100%] h-[100%] absolute left-0 top-0 bg-gradient-to-r from-[#d008d794] to-[#1b1ba4b2] rounded-[10px]">
+                        <div class="flex justify-center align-center flex-wrap">
+                        <div class="w-[100%] text-[#fff] text-[24px] leading-[28px] capitalize mx-[43px] md:mt-[34px] lg:mt-[100px] mb-[50px]">
+                            <h2>mr.kulikamia</h2>
+                            <h3>
+                                <a href="#">
+                                    <i class="text-[#000] text-[20px] mr-[10px] hover:text-[#19bbfb] duration-500 fa-solid fa-phone"></i>
+                                </a> phone:+05843957837</h3>
+
+                            <h3>his house is vary beutiful</h3>
+                            
+                        </div>
+                        <div class="text-[24px] text-[#0bff98] flex gap-x-[32px] ">
+                           <a href="#"> <i class="hover:text-[#fff]  duration-500 fa-brands fa-facebook-f"></i></a>
+                           <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-instagram"></i></a>
+                           <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-linkedin"></i></a>
+                           <a href="#"> <i class="hover:text-[#fff] duration-500 fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-medium text-[20px] sm:text-[22px] lg:text-[24px] capitalize leading-[80%] lg:leading-[150%] mb-[8px]">South Grove</h3>
+                <p class="text-[#203239] font-light text-base capitalize leading-[30px] pr-[30px] text-justify">
+                    1 No.1, RT.1/RW.1, Lb. Bulus, Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12440
+                </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== resident part end here ==== -->
+
+<!-- ===== contact part start here ===== -->
+
+    <div class="bg-[#EEEDDE] pt-[48px] lg:pb-[48px]">
+        <div class="max-w-[100%] lg:max-w-[1166px] mx-auto">
+            <div class="flex flex-col xl:flex-row xl:flex xl:gap-x-[116px] px-[] md:px-[40px] lg:px-[50px] xl:px-[0]">
+                <div class="w-100% sm:w-[649px] h-[295px] px-[20px] lg:px-[0]">
+                    <h2 class="font-semibold text-[24px] sm:text-[32px] lg:text-[36px] mb-[30px] lg:mb-[64px] capitalize leading-[150%]">Hubungi Kami</h2>
+
+                    <div class="flex flex-col gap-y-20px sm:flex-row sm:flex sm:gap-x-[48px]">
+                        <div class=" hidden sm:block w-[243px] h-[178px] px-[24px] py-[24px] border border-solid border-[#FF752780] rounded-[10px]">
+                            <div class="flex gap-x-[16px]">
+                            <div class="w-[48px] h-[56px] flex justify-center items-center">
+                                <i class="text-[30px] fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="">
+                                    <h3 class="text-base font-medium capitalize">call</h3>
+                                    <h4 class="text-base font-medium capitalize mb-[24px]">+839532057832</h4>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="w-[195px] h-[50px] bg-[#FF752733] flex justify-center items-center rounded-[10px] hover:bg-[#FF7527] duration-500" >
+                            <a class="text-[#FF7527]  hover:text-[#fff] text-base capitalize px-[61.5px] py-[13px]" href="#">call now</a>
+                        </div>
+                        </div>
+                        <div class="w-[306px] h-[178px] px-[24px] py-[24px] border border-solid border-[#FF752780] rounded-[10px]">
+                            <div class="flex gap-x-[16px]">
+                                <div class="w-[48px] h-[56px] flex justify-center items-center">
+                                   <i class=" text-[30px] fa-regular fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="">
+                                        <h3 class="text-base font-medium capitalize">email</h3>
+                                        <h4 class="text-base font-medium capitalize mb-[24px]">omahindev@gmail.com</h4>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="w-[200px] h-[50px] bg-[#FF752733] flex justify-center items-center rounded-[10px] hover:bg-[#FF7527] duration-500" >
+                                <a class="text-[#FF7527]  hover:text-[#fff] text-base capitalize px-[61.5px] py-[13px]" href="#">email now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="w-[400px] h-[245px] px-[20px] lg:px-[0]  hidden sm:block">
+                    <h2 class=" font-semibold text-[24px] sm:text-[32px] lg:text-[36px] mb-[30px] lg:mb-[64px] capitalize leading-[150%]">Penghargaana</h2>
+                    <div class="flex gap-x-[24px] mt-[-65px]">
+                        <div class="w-[156px] mt-[63px]">
+                            <img src="images/logo_last_1.png" alt="not_found">
+                        </div>
+                        <div class="w-[212px] mt-[30px]">
+                            <img src="images/logo_last_2.png" alt="not_found">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ===== contact part end here ===== -->
+
+<!-- ===== footer part start here ===== -->
+    <div class="w-full bg-[#203239] py-[14px] xl:py-[30px]">
+        <div class="max-w-[100%] lg:max-w-[1166px] mx-auto">
+            <div class="flex flex-col gap-y-[20px] sm:px-[30px] xl:px-[0] sm:flex-row sm:flex sm:justify-between xl:flex xl:justify-between">
+                <div class="flex justify-center align-center ">
+                    <img src="images/logo_last.png" alt="not_found">
+                </div>
+                <div class="flex justify-center items-center gap-x-[64px]">
+                    <a class="text-[#fff] text-[20px]" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="text-[#fff] text-[20px]" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="text-[#fff] text-[20px]" href="#"> <i class="fa-solid fa-t"></i></a>
+                    <a class="text-[#fff] text-[20px]" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ===== footer part start here ===== -->
+    <script src="js/aos.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/tailwind.config.js"></script>
+</body>
+
+</html>
